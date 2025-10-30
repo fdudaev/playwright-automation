@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test" ,
-    "test:specific": "npx playwright test  --grep webAccountSignIn.spec.js",
+    "test": "npx playwright test",
+    "test:specific": "npx playwright test  --grep xploreQaTest.spec.js",
     "test:tag": "npx playwright test  --grep @tag1",
     "report": "npx playwright show-report"
   },
@@ -15,5 +15,8 @@
   "devDependencies": {
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.9.1"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1"
   }
 }

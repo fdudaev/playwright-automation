@@ -1,0 +1,45 @@
+/*
+Recommended VS Code Extrensions: 
+    Code Runner (.run); JavaScript (ES6) code snipets; Prettier - Code formatter; Material Icon Theme; NPM; npmIntellisense; NPM Run; Playwright Test for SV Code; Playwright Sniipets; Playwright Test Snippets; CuCumber Gherkin; Better Coments; Tabnine;
+Playwright @Playwright/test package:  designed specifically for end-toend testing
+    Uses a specialized test runner and framwork, no need for junit/testNJ etc
+Comes with buildin report
+Fixtures: are set of variables that reffer to the specific type of objects (ex: in selenium we have "driver" in Playwright we have "page")
+Fixtures: for (UI) page; browser; context; viewport; browserName; (API) request; baseURL..
+Has its own global configuration
+it includes built-in assertions
+API testing
+
+test (); // the test is the core building block of Playwright tests
+    it take two arguments, 1) description 2)async callback function
+        1) description: Describes whatthe  test is checking. it must be String
+        2) async callback function: takes fixture(s) and contains the codes of the test
+        test('test name',async({fixtureName})) => {//test Cods};
+page: is a fixture == driver (in selenium); we control a tab on our browser by using this fixture
+      every test isolated page instance, one tab for every single test function
+      provides loads of methods for navigation, interaction and assertions
+
+      page methods: goto(url), title(), url(), setViewportSize({w,l}), page.locator(selecotr)
+
+locator(): a function that allows us to select elements on the page
+    Action Methods: 
+        click(), fill(), type(), press(). check(), uncheck(), selectOption()
+    Retreival Methods:
+        textContent(), innerText(), inputValue(), getAttribute(), waitForSelector()
+    State Methods: 
+        isVisible(), isHidden(), isEnabled(), isDisabled(), isChecked(), isSelected()
+
+
+We need to create a test function for each test case:
+    we need to test function from playwright test library which contains the test cases and assertions
+    const {nameOfTheFunctionToBeImported} = require ("libraryName");
+    const {test} = require("@playwright/test");
+
+Test Groups:
+    we use test.describe() to group tests together, allowing us to organize tests into logical groups
+    Test groups can have their own hooks that apply to all tests in the group, before and after each test
+Hooks functions: 
+    Allow us to execute code before and after each test in a group
+
+    
+*/

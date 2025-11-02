@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "test:specific": "npx playwright test  --grep xploreQaTest.spec.js",
+    "test:specific": "npx playwright test  --grep locatorObjectMethods2.spec.js",
     "test:tag": "npx playwright test  --grep @tag1",
     "report": "npx playwright show-report"
   },

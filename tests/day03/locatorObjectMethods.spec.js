@@ -7,8 +7,8 @@ test.describe('Test Plan', () => {
     });
     test.afterEach(async ({ page }) => {
         await page.waitForTimeout(3000);
-    });
-    test('Check(): is a mehthod to checks the radiobuttons and checkboxes if they arent check yet', async ({ page }) => {
+    });/* 
+    test('Check(): is a mehthod that checks the radiobuttons and checkboxes if they arent check yet', async ({ page }) => {
         // let checkboxesLink = page.locator("text='Checkboxes'");
         let checkboxesLink = page.getByText("Checkbox");
         await checkboxesLink.click();
@@ -22,7 +22,7 @@ test.describe('Test Plan', () => {
         await checkboxesLink.click();
         let checkbox2 = page.locator("//input[@id='box2']");
         await checkbox2.uncheck();
-    });
+    }); */
 
     test('SelectOption(): is used for dropdowns ', async ({ page }) => {
         let dropdownLink = page.getByText("Dropdown");

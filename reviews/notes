@@ -53,5 +53,30 @@ await: is a keyword used inside async function to wait for a promise
 Synchronous vs Asynchronous:
     Synchronous: Tasks run one after another. Each step waits for the previous one to finish.
     Asynchronous: Tasks can run in parallel. The program keeps going while waiting for slower operations to complete. async and await are used here to manage those tasks efficiently.
-    
+
+--------------------------------------------------------
+Assertions:
+    Assertions in Playwright are used to validate the expected behavior of the application.
+    Playwright provides built-in assertions and also allows us to write our own custom assertions.
+    Assertions Methods woth with Value (no need for promise (no need for await )): 
+        expect(actual).toBe(expected), expect(actual).toBeTruthy(), expect(actual).toBeFalsy(), expect(actual).toBeLessThan(expected), expect(actual).toBeGreaterThan(expected), expect(actual).toBeLessOrEqual(expected), expect(actual).toBeGreaterThanOrEqual(expected), expect(actual).toContain(substring), expect(actual).toEqual(expected)
+    Assertions Methods with locator/page (return promise need for await):  
+    expect(locator/page).toBeVisible(), expect(expect(locator/page).toBe).toBeHidden(), expect(expect(locator/page).toBe).toBeEnabled(), expect(expect(locator/page).toBe).toBeDisabled(), expect(expect(locator/page).toBe).toHaveText(expected), expect(locator/page).toBeEmpty(), expect(locator/page).toContainText(expected), expect(locator/page).toHaveAttribute(name, value), expect(locator/page).toHaveCSS(cssSelector, expected)
+--------------------------------------------------------
+Alerts:
+    Browser dialos that interrupt user interaction.
+    Common types:
+        confirmation, diaologs and prompt.
+    To Handle alerts:
+        We use on() method of the page object and it need to be called before the alert is triggered.
+        methods:
+            accpet(); dismiss();accept(input);
+iFrame:
+    Is an HTML element that embed another HTML document within the current document.
+    Allows to display content from a different source.
+    frameLocator() method of the page object is used for locating the iframes.
+    The iframes can be located by using:
+        ID, Name, CSS, XPATH: ex: let iframe1 = page.iframeLocator('#iframeID)
+
+
 */

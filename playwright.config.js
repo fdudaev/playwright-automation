@@ -9,7 +9,7 @@ export default defineConfig({
   /* Retry on CI only */
   retries: 1,
   /* Opt out of parallel tests on CI. */
-  workers: 4,
+  workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   
@@ -33,11 +33,6 @@ export default defineConfig({
         viewport: {width: 1850, height: 1080} 
        },
     },
-        {
-      name: 'Mobile Safari',
-      use: { ...devices['iPhone 12'] },
-    },
-
   /* 
 
   {
@@ -95,7 +90,7 @@ export default defineConfig({
 
     {
       name: 'Mobile Safari',
-      use: { ...devices['iPhone 12'] },
+      use: { ...devices['iPhone 17'] },
     },
   */
   ],

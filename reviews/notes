@@ -77,6 +77,18 @@ iFrame:
     frameLocator() method of the page object is used for locating the iframes.
     The iframes can be located by using:
         ID, Name, CSS, XPATH: ex: let iframe1 = page.iframeLocator('#iframeID)
-
+--------------------------------------------------------
+Mouse Actions:
+    Are actions to simulate users interactions with the mouse.
+    Methods:
+        page.click(selector); page.dblclick(selector); page.hover(selector); page.dragAdnDrop(sourse, target); page.click(selector, page.mouse.wheel(deltaX, deltaY); page.click{button: 'right'}); // right click.
+--------------------------------------------------------
+Web Tables:
+    HTM elements for displaying data in rows and columns
+    to xtract data from Tables:
+        table.locator('tr'); // To get all rows
+        row.locator('td) // To get cell in a row
+        cell.textContent(); // To extract text 
+--------------------------------------------------------
 
 */

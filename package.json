@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "test:specific": "npx playwright test  --grep instSigninXplore.spec.js",
-    "test:tag": "npx playwright test  --grep @env-test",
+    "test:specific": "npx playwright test  --grep sepPractice.spec.js",
+    "test:tag": "npx playwright test  --grep @sep",
     "report": "npx playwright show-report"
   },
   "keywords": [],

@@ -59,11 +59,6 @@ test.describe('Open QA URl', () => {
         await page.click("(//a[contains(@class,'stats-document-lh-action-downloadPdf_2')])[1]");
         await expect(page.url()).toContain('/stamp/stamp.jsp');
         await page.goBack();
-        
-
-
-
-
 
     });
 

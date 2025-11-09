@@ -91,4 +91,26 @@ Web Tables:
         cell.textContent(); // To extract text 
 --------------------------------------------------------
 
+API Testing:
+    Playwright allows us to test API endpoints.
+    We need to install @playwright/test-fixtures package: npm install @playwright/test-fixtures
+    
+        Task: Send a get request and verify the status code, content-type, json body
+            Step 1: Set the base URL to "http://api.example.com/"
+            Step 2: send a GET request to "/emapleEndPoint"
+            Step 3: Verify that status code is 200
+            Step 4: Verify that the content-type is application/json
+            Step 5: Verify that the id is "A05"
+            Step 6: Verify that the firtName is "Josh"
+            Step 7: Verify that the lastName is "Jeremy
+        Task: Send a post request
+            Step 1: Set the base URL to "http://api.example.com/"
+            Step 2: send a POST request to "/emapleEndPoint" with the body:
+            {
+            "firstname": "Muhtar",
+            "lastName": "Mahmut"
+            }
+            Step 3: Verify that status code is 201
+            Step 4: Verify that the content-type is application/json
+
 */

@@ -21,9 +21,9 @@ test.describe("Toolkit Sign In", async () => {
   });
 
   test("Search for 'All' copyrights by Sourse", async ({ page }) => {
-    let sourceSearchBox = page.locator("//input[@autocomplete='a6a13f1c3b78']");
+    let sourceSearchBox = page.locator("//input[@autocomplete='ad0701836609']");
     await sourceSearchBox.click();
-    await sourceSearchBox.fill("89001");
+    await page.locator("//div[@title='89001']").click();
     let copyrightStatusAll = page.locator("//p[text()='All']");
     await copyrightStatusAll.check();
     let searchButton = page.locator("//button[@class='btn search-button']");

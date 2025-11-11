@@ -66,3 +66,74 @@ Feature: Click Next button on payment plans page
     Scenario: Verify that clicking on upfront payment plan will activate the next button
         When user clicks upfront payment plan
         Then the next button on payment plans page should be clickable   
+------------------------------------------------------------------------------------------------
+
+Gherkin:
+Keywords In Gherkin:
+    Feature: for giving the feature name & feature description
+
+     Background: is for pre-requisit steps for all the scenarios in this feature.
+        Given is for pre-requisit step for all the scenarios in this feature.
+
+    Scenario: Test Case Name
+        Given is for pre-requisit step for this test Case
+        And is for additional pre-requisit step for this test Case
+        When is for action step to be performed for this test Case
+        And is for additional action step to be performed for this test Case
+        Then is for validation step to verify the result of the action step
+        And is for additional action step to be performed for this test Case
+        
+    Scenario Outline
+    Example
+    
+
+    #: for comments
+
+
+Test case: verify that all the links under the ul tag are displayed and enabled.
+    step1: Open chrome browser
+    step2: Navigate to "https://practice.cydeo.com/"
+    step3: The title should be "Practice"
+    step4: Locate all the links under the ul HTML tag
+    step5: Verify there are exactly 50 links
+    step6: Verify all the links are visible and clickable 
+
+Here is the xpath locator for locating the links elements that are under the ul tag: 
+//ul[@class='list-group']/li/a
+
+
+Task: verify the next button is visible and clickable
+    step1: Open chrome browser
+    Step2: Navigate to the URL "https://www.example.com"
+    step3: Enter the username in username inputbox
+    step4: Enter the password in password inputbox
+    step5: Click login button
+    step6: verify that user is landed on home page
+    step7: verify that the next button on home page is visible and clickable
+
+
+Task: Send a get request and verify the status code, content-type, json body
+    Step 1: Set the base URL to "http://api.example.com"
+    Step 2: send a GET request to "/emapleEndPoint"
+    Step 3: Verify that status code is 200
+    Step 4: Verify that the content-type is application/json
+    Step 5: Verify that the id is "A05"
+    Step 6: Verify that the firtName is "Josh"
+    Step 7: Verify that the lastName is "Jeremy
+
+
+Task: Send a post request
+    Step 1: Set the base URL to "http://api.example.com"
+    Step 2: send a POST request to "/emapleEndPoint" with the body:
+    {
+    "firstname": "Muhtar",
+    "lastName": "Mahmut"
+    }
+    Step 3: Verify that status code is 201
+    Step 4: Verify that the content-type is application/json
+
+
+body:{
+    "firstname": "Muhtar",
+    "lastName": "Mahmut"
+}

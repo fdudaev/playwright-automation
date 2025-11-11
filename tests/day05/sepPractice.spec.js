@@ -1,9 +1,6 @@
 import { test } from '@playwright/test';
 
-test("SEP Practice @sep", async ({ page }) => {
-
-    const USERNAME = "automation-user";
-    const PASSWORD = "123abc";
+test("SEP Practice ", async ({ page }) => {
 
     const ENCODED_CREDENTIALS = Buffer.from(`${process.env.SEP_USERNAME}:${process.env.SEP_PASSWORD}`).toString("base64");
 
@@ -25,7 +22,7 @@ test("SEP Practice @sep", async ({ page }) => {
     let phoneInput = page.locator("//input[@formcontrolname='phoneNumber']");
     await phoneInput.fill("05555555555");
 
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(5000);
 
 
 })

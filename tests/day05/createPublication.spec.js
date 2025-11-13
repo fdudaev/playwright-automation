@@ -60,7 +60,7 @@ test.describe("Creaste New AO Conference Publication", () => {
         let publicationCreateButton = page.locator("//button[@type='submit'][@class='button-element margin-right']");
         await publicationCreateButton.click();
 
-        await page.waitForTimeout(10000);
+        await page.waitForTimeout(3000);
 
     });
 });
